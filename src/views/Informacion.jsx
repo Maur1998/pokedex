@@ -13,8 +13,7 @@ export const Informacion = () => {
 
     const consultarPokemon = async () => {
         try {
-            const nuevo_nombre = nombre.replace(/:/g, '')
-            const url = `https://pokeapi.co/api/v2/pokemon/${nuevo_nombre}`;
+            const url = `https://pokeapi.co/api/v2/pokemon/${nombre}`;
             const response = await fetch(url);
             const data = await response.json();
             setDatos({

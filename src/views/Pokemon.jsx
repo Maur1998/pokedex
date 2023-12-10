@@ -25,7 +25,7 @@ export const Pokemon = () => {
     const handleSubmit = () => {
         event.preventDefault();
         if(nombre.length > 1){
-            navigate(`/pokedex/:${nombre}`)
+            navigate(`/pokedex/${nombre}`)
         }
 
     }
